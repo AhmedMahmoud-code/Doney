@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="aNc-PC-CmK" id="PQf-3q-idR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Doney" id="0lT-H5-uAR" colorLabel="IBBuiltInLabel-Blue"/>
+                    <navigationItem key="navigationItem" title="Doney" id="0lT-H5-uAR" colorLabel="IBBuiltInLabel-Blue">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MUq-e7-9CF">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="aNc-PC-CmK" id="HnS-gO-40n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2F-XM-Ar8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,8 +50,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hca-nJ-YZM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="S95-xj-wOE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S95-xj-wOE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.2447006404" green="0.5206852555" blue="0.58432132010000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
