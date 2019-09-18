@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Modell{
+class Modell : Encodable,Decodable {
     
     var title : String = ""
-    var done : Bool = true
+    var done : Bool = false
 }
